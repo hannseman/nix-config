@@ -61,7 +61,7 @@
     # Shortcuts
     "," = "comma";
     p = "cd ~/src";
-    diff = "diff --color=auto";
+    diff = "difft";
     cat = "bat -pp";
     grep = "rg";
     find = "fd";
@@ -85,6 +85,7 @@
     ripgrep
     tree
     bat
+    difftastic
 
     # Fonts
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
@@ -198,7 +199,7 @@
     forwardAgent = true;
     includes = [ "config.d/*" ];
     extraConfig = ''
-      AddKeysToAgent confirm
+      AddKeysToAgent ask
       IgnoreUnknown UseKeychain
       UseKeychain yes
       IdentityFile ~/.ssh/id_ed25519
@@ -214,7 +215,8 @@
       signByDefault = true;
       key = "89F9502DAC4CA6C1";
     };
-    lfs = { enable = true; };
+    lfs.enable = true;
+    difftastic.enable = true;
     extraConfig = {
       apply.whitespace = "fix";
       core.trustctime = false;
