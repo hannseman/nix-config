@@ -92,6 +92,8 @@
 
     # Universal dev tools
     git-crypt
+    age
+    sops
     qemu
     wget
   ];
