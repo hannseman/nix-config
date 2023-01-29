@@ -156,6 +156,14 @@
     autocd = true;
     defaultKeymap = "emacs";
     dotDir = ".config/zsh";
+    # MacOS clears out /etc/zshrc after updates, so make sure we run nix-daemon.sh
+    initExtraFirst = ''
+      # Nix
+      if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+        . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+      fi
+      # End Nix
+    '';
     # Source local extra settings if it exists
     envExtra = ''
       [ -f $ZDOTDIR/extra.zshenv ] && source $ZDOTDIR/extra.zshenv
