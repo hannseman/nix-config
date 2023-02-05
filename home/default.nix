@@ -47,6 +47,12 @@
       "Makefile" = {
         indent_style = "tab";
       };
+      "*.go" = {
+        indent_style = "tab";
+      };
+      "*.md" = {
+        trim_trailing_whitespace = false;
+      };
       "*.py" = {
         indent_size = 4;
       };
