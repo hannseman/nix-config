@@ -92,6 +92,7 @@
     tree
     bat
     difftastic
+    pwgen
 
     # Fonts
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
@@ -102,6 +103,8 @@
     sops
     qemu
     wget
+    ffmpeg
+    imagemagick
   ];
 
   programs.direnv = {
