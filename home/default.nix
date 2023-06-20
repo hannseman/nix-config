@@ -330,7 +330,6 @@
       scrollback_lines = 10000;
 
       macos_titlebar_color = "background";
-      macos_thicken_font = "0.75";
       macos_quit_when_last_window_closed = "yes";
 
       tab_bar_style = "separator";
