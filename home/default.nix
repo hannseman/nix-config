@@ -252,6 +252,7 @@
       ".DS_Store"
       ".direnv/"
       ".idea/"
+      ".vscode/"
       "*.swp"
       "npm-debug.log"
       "venv/"
