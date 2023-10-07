@@ -2,7 +2,7 @@
 
 installation:
 ```sh
-nix run 'nixpkgs#home-manager' -- --flake . switch
+nix run --extra-experimental-features "nix-command flakes" 'nixpkgs#home-manager' -- --flake . switch
 ```
 
 updating state:
